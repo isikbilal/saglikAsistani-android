@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.muslu.saglikasistani.adimGrafigi"
+    tools:showIn="@layout/activity_adim_grafigi"
+    android:background="@drawable/background"
+    >
+
+    <RelativeLayout tools:context="com.bgnsoftware.saglik_uygulamasi.kosu"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:ignore="RtlHardcoded"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView25"
+            android:background="@drawable/kosuresmi"
+            android:layout_below="@+id/textView75"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="46dp"
+            tools:ignore="ContentDescription,UnknownId,UnknownIdInLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mesafe"
+            android:id="@+id/textView76"
+            android:layout_alignTop="@+id/imageView25"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0 Km"
+            android:id="@+id/aldigi_yol"
+            android:layout_below="@+id/textView76"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0 Kcal"
+            android:id="@+id/textView78"
+            android:layout_alignBottom="@+id/imageView25"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Yakılan Kalori"
+            android:id="@+id/textView79"
+            android:layout_above="@+id/textView78"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <Button
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/start_id"
+            android:layout_toEndOf="@+id/start_id"
+            android:layout_marginStart="28dp"
+            android:id="@+id/stop_id"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_id"
+            android:layout_below="@+id/textView78"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="67dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:text="Kronometre:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/Black"
+            android:layout_below="@+id/textView78"
+            android:layout_alignParentStart="true"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/kro_sonuc_id"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:text="Sonuçlarım"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSonuclar_id"
+            android:layout_above="@+id/sonuclar_id"
+            android:layout_toEndOf="@+id/stop_id"
+            android:layout_alignTop="@+id/stop_id"
+            tools:ignore="HardcodedText,NotSibling,UnknownIdInLayout" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_laps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="337dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp">
+        <EditText
+            android:id="@+id/et_laps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Black"
+            android:textStyle="normal|bold"
+            tools:ignore="LabelFor,ScrollViewSize"
+            android:inputType="" />
+    </ScrollView>
+</RelativeLayout>

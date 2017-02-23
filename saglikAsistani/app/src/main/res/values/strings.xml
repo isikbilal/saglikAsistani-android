@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">saglikAsistani</string>
+    <string name="action_settings">Settings</string>
+    <string name="giri">Giriş</string>
+    <string name="kay_t">Kayıt</string>
+    <string name="name">Name</string>
+    <string name="bilgi">Bu ekran bildirime tıkladığınız için açıldı.</string>
+    <string name="title_activity_giris">girisActivity</string>
+</resources>

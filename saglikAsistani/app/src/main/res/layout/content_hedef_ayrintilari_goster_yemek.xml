@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.muslu.saglikasistani.hedefAyrintilariGosterYemek"
+    tools:showIn="@layout/activity_hedef_ayrintilari_goster_yemek"
+    android:background="@drawable/background"
+    >
+
+    <RelativeLayout tools:context="com.bgnsoftware.saglik_uygulamasi.hedefAyrintilariGoster"
+        tools:showIn="@layout/activity_hedef_ayrintilari_goster"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hedefi Kaydet"
+            android:id="@+id/button"
+            android:layout_below="@+id/editText5"
+            android:layout_alignRight="@+id/editText5"
+            android:layout_alignEnd="@+id/editText5"
+            android:textStyle="bold"
+            android:background="@color/Azure"
+            android:textColor="@color/Chartreuse" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:layout_below="@+id/imageView23"
+            android:layout_toRightOf="@+id/textView41"
+            android:layout_toEndOf="@+id/textView41" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView23"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/hedefgoster" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GÜNLÜK KALORİ(KCAL)"
+            android:id="@+id/textView41"
+            android:layout_below="@+id/imageView23"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/Chartreuse"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İptal"
+            android:id="@+id/hedefIptalYemek_id"
+            android:onClick="Tiklandi6"
+            android:layout_alignTop="@+id/button"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button"
+            android:layout_marginRight="48dp"
+            android:layout_marginEnd="48dp"
+            android:textStyle="bold"
+            android:textColor="@color/Chartreuse"
+            android:background="@color/Azure" />
+    </RelativeLayout>
+</RelativeLayout>
